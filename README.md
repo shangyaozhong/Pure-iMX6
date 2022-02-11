@@ -1,1 +1,1 @@
-# Pure-UltraRendu
+# Pure firmware for UltraRendu 
