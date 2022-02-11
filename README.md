@@ -1,4 +1,4 @@
-# Pure firmware for SONORE UltraRendu 
+# "Pure" firmware for SONORE UltraRendu 
 
 Custom Buildroot for creating Pure firmware i-MX6 platform 
 
