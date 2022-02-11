@@ -1,0 +1,10 @@
+source "$BR2_EXTERNAL_PURE_PATH/package/roonready/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/naa/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/pureweb/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/aprenderer/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/scream/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/spotifyd/Config.in"
+source "$BR2_EXTERNAL_PURE_PATH/package/tidalconnect/Config.in"
+
+
+

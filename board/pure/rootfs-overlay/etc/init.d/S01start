@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+    
+    cat /etc/random-seed >/dev/urandom
+    /sbin/rndaddtoentcnt 1024
+    
+    ;;
+ *)
+    exit 1
+esac
+

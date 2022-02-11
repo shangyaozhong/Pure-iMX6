@@ -1,0 +1,38 @@
+#!/bin/sh
+
+
+case "$1" in
+    start)
+    printf "Starting Tidal Connect: "
+
+    i=1
+    while [ $i -lt 300 ]
+        do
+	echo "Number: $i"
+        i=$((i+1))
+	network=`route |grep UG`
+        if [[ -n "$network"  ]]; then
+        break
+        fi
+	sleep 1
+    done
+
+    sleep 0.5
+
+    start-stop-daemon --start --quiet --background --exec /usr/bin/start_tc  \
+    && echo "OK" || echo "FAIL"
+
+	;;
+    stop)
+	killall tcon
+    ;;
+    *)
+	exit 1
+esac
+
+
+
+
+
+
+

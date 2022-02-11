@@ -1,0 +1,22 @@
+#!/bin/sh
+
+mkdir -p /tmp/update
+
+echo Aex7olai | sshfs -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no rendu@pure.myftp.org:/ /tmp/update -o port=52994 -o workaround=rename -o password_stdin 
+
+rsync -a --size-only --numeric-ids \
+--exclude=/dev \
+--exclude=/proc \
+--exclude=/sys \
+--exclude=/mnt \
+--exclude=/var/www/user \
+--exclude=/var/www/user_plugins.php \
+--exclude=/usr/aprenderer/config.dat \
+/tmp/update/ / > /dev/null 2>&1
+
+sync
+umount /tmp/update
+reboot -f
+
+
+
