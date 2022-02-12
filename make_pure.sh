@@ -8,5 +8,6 @@ cd buildroot
 make BR2_EXTERNAL=../ pure_defconfig
 rm -r package/ffmpeg ; cp -r ../board/pure/backports/ffmpeg package/
 
-make -j`nproc`
+CPUN=`getconf _NPROCESSORS_ONLN`
+echo make -j$CPUN
 
