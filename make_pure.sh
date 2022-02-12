@@ -9,5 +9,5 @@ make BR2_EXTERNAL=../ pure_defconfig
 rm -r package/ffmpeg ; cp -r ../board/pure/backports/ffmpeg package/
 
 CPUN=`getconf _NPROCESSORS_ONLN`
-echo make -j$CPUN
+make -j$CPUN
 
