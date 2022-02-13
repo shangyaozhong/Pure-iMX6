@@ -10,6 +10,6 @@ Start compilation:
 ```
 ./make_pure.sh
 ```
-Once completed, the SD image will be generated here:: buildroot/output/images/Rendu_XX_XX_XXXX.gz
+Once completed, the SD image will be generated here: buildroot/output/images/Rendu_XX_XX_XXXX.gz
 
 SSH root/root
